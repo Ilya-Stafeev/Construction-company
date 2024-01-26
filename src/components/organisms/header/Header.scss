@@ -1,0 +1,120 @@
+.header {
+    padding-top: 37px;
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .header__block {
+            display: flex;
+            justify-content: space-between;
+
+            .header__logo{
+
+            }
+
+            .header__nav {
+                display: flex;
+                align-items: center;
+                padding-top: 33px;
+                margin-bottom: 15px;
+
+                .header__nav-item {
+                    padding-left: 10px;
+                    padding-right: 10px;  
+
+                    .header__link {
+                        text-decoration: none;                  
+                        font-size: 16px;
+                        color: #156292;
+                        position: relative;
+                        display: inline-block;
+                        padding-bottom: 2px;
+                        border-bottom: 1px solid #156292;
+                        transition: .2s;
+                        font-weight: 600;
+
+                        &:hover {
+                            border-bottom-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .header__contatcs {
+                display: flex;
+                align-items: center;
+
+                .header__soc {
+                    display: flex;
+                    align-items: center;
+
+                    .header__telegram {
+                        background: url(../../../../public/teleghead.png) no-repeat center center;
+                        background-size: 100% auto;
+                        display: block;
+                        width: 38px;
+                        height: 38px;
+                        margin-right: 20px;
+                    }
+
+                    .header__whatsapp {
+                        background: url(../../../../public/whatsapp.png) no-repeat center center;
+                        background-size: 100% auto;
+                        display: block;
+                        width: 38px;
+                        height: 38px;
+                        margin-right: 20px;
+                    }
+                }
+
+                .header__inform {
+                    .header__mail {
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 14px;                        
+                        color: #0095bb;
+                        margin-bottom: 12px;
+                        display: block;
+                        text-align: right;
+                    }
+
+                    .header__phone {
+                        text-decoration: none;
+                        color: #156292;
+                        font-size: 24px;
+                        font-weight: 700;
+                        display: block;
+                        text-align: right;
+
+                        .header__phone-highlighting {                            
+                            font-size: 16px;
+                            color: #79bb42;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            width: 750px;
+        }
+    }
+}
