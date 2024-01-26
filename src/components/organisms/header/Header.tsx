@@ -52,6 +52,22 @@ const Header: React.FC = () => {
                         </a>
                     </div>
                 </div>
+                <div className="header__bar">
+                    <nav className='header__mobail-nav' role="navigation">
+                        <div className="header__menu" id="menuToggle">
+                            <input type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            <ul id="menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Info</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
