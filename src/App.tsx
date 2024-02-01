@@ -2,8 +2,9 @@ import './index.scss'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Home from "./pages/Home"
-import Home2 from "./pages/Home2"
+import { Home, About, Services, Portfolio, Contacts } from './pages'
+
+
 
 const App = () => {  
 
@@ -11,7 +12,10 @@ const App = () => {
     <BrowserRouter>      
       <Routes>        
         <Route path="/" element={<Home />} />
-        <Route path="/h" element={<Home2 />} />    
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />  
+        <Route path="/portfolio" element={<Portfolio />} />  
+        <Route path="/contacts" element={<Contacts />} />   
       </Routes>
     </BrowserRouter> 
   )

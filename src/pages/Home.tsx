@@ -1,8 +1,15 @@
-import Header from "../components/organisms/header/Header"
+import Header from "../components/screens/header/Header"
+import Main_blok from "../components/screens/main_block/Main-block"
+import Modal_cons from "../components/interfaces/modals/Modal_cons"
 
-const Auto = () =>{
+const Home = () =>{
     return(     
-        <Header/>
+        <>
+            <Header/>
+            <Main_blok/>
+            <Modal_cons/>
+            <div>Дом</div>
+        </>
     )
 }
-export default Auto
+export default Home
