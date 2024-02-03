@@ -27,6 +27,10 @@ body {
 	text-decoration: none;
 	line-height: 1;
     
+    &.menu-active {
+        overflow: hidden;
+    }
+
    .site {
         background: url(../public/bg.jpg) no-repeat center top;
    }

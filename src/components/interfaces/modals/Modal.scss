@@ -1,0 +1,37 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(213, 213, 213, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;    
+    transition: 0.5s;
+  
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    &__block {
+      position: absolute;
+      background-color: #fff;
+      margin-top: 60px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 372px;
+      transform: scale(0);
+      transition: 0.7s;
+      border-radius: 10px;
+      top: -100%;
+      left: 35%;
+      opacity: 0;
+  
+      &.active {
+        transform: scale(1);
+        opacity: 1;
+        top: 0%;
+      }
+    }
+  }

@@ -30,6 +30,12 @@ const Header: React.FC = () => {
 
     const handleMenuButtonClick = () => {
         setIsMenuActive(!isMenuActive)
+
+        if (!isMenuActive) {
+            document.body.classList.add('menu-active');
+        } else {
+            document.body.classList.remove('menu-active');
+        }
     }
     
     const navClass = isMenuActive ? 'header__nav active' : 'header__nav';

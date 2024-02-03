@@ -1,6 +1,20 @@
 import './Main_block.scss';
 
-const Main_block: React.FC = () => {
+interface DiskMenuProps {
+    active: boolean;
+    setActive: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Main_block: React.FC<DiskMenuProps> = ({ active, setActive }) => {
+    const handleModalClick = () => {
+        setActive(true)
+    
+        if (!active) {
+            document.body.classList.add('menu-active');
+        } else {
+            document.body.classList.remove('menu-active');
+        }
+      }
 
     return(
         <section className="main-block">
@@ -34,7 +48,7 @@ const Main_block: React.FC = () => {
                             </p>
                         </div>
 
-                        <button className="main-block__btn">
+                        <button className="main-block__btn" onClick={handleModalClick}>
                             <span className="main-block__btn-text">Бесплатная консультация</span>
                         </button>
 
