@@ -1,0 +1,172 @@
+.services {
+    position: relative;
+    margin-bottom: 0;
+    z-index: 2;
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .services__row {
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .services__col {
+                width: 100%;
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .services__title {
+                    text-align: center;
+                    margin-bottom: 35px;
+                    margin-top: 5px;
+                    font-size: 36px;
+                    font-family: 'Montserrat';
+                    color: #156292;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .services__blocks {
+                    display: flex;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    width: auto;
+
+                    .services__card {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        width: 50%;
+                        min-width: 50%;
+                        max-width: 50%;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            z-index: 1;
+                            background: #e8e8e8;
+                            border-radius: 5px;
+                            height: 10px;
+                            bottom: -14px;
+                            left: 29px;
+                            right: 29px;
+                            width: auto;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            z-index: 1;
+                            background: #f2f2f2;
+                            border-radius: 5px;
+                            height: 10px;
+                            bottom: -7px;
+                            left: 22px;
+                            right: 22px;
+                            width: auto;
+                        }
+
+                        .services__card-el {
+                            height: 100%;
+                            background: #ffffff;
+                            box-shadow: 0 10px 30px 12px rgba(0,0,0,.2);
+                            position: relative;
+                            border-radius: 5px;
+                            padding: 40px 25px 25px;
+
+                            .services__card-title {
+                                text-align: center;
+                                margin-bottom: 25px;
+                                font-size: 30px;
+                                color: #156292;
+                                font-family: 'Montserrat';
+                                font-weight: 700;
+                                line-height: 1.2;
+                            }
+
+                            .services__card-image {
+                                margin: 0 auto;
+                                max-width: 90%;
+
+                                .services__card-img {
+                                    width: 454.5px;
+                                    height: 418.23px;
+                                }
+                            }
+
+                            .services__card-content {
+                                display: block;
+                                color: #3f3d44;
+                                font-size: 14px;
+                                font-family: 'SF Pro Display';
+                                line-height: 1.5;
+                                margin-bottom: 10px;
+
+                                .services__card-text {
+                                    font-size: 20px;
+                                    text-align: center;
+                                    margin-top: 15px;
+                                    font-weight: 700;
+                                    line-height: 1.3;
+                                    color: #3f3d44;
+                                }
+                            }
+
+                            .services__card-btnblock {
+                                text-align: center;
+
+                                .services__card-btn {
+                                    height: 50px;
+                                    text-align: center;
+                                    padding: 10px 40px;
+                                    border: 4px solid #e5efed;
+                                    line-height: 41px;
+                                    color: #ffffff;
+                                    border-radius: 25px;
+                                    background: #79bb42;
+                                    font-size: 16px;
+                                    font-family: 'SF Pro Display';
+                                    transition: .2s;
+                                    font-weight: 700;
+
+                                    &:hover {
+                                        background: #8dd454;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (min-width: 992px) {
+                .services__col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;            
+        }        
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            width: 750px;
+        }
+    }
+}
