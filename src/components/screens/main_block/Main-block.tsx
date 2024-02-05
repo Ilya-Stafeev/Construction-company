@@ -50,7 +50,7 @@ const Main_block: React.FC<DiskMenuProps> = ({ active, setActive }) => {
 
                         <button className="main-block__btn" onClick={handleModalClick}>
                             <span className="main-block__btn-text">Бесплатная консультация</span>
-                        </button>
+                        </button>                       
 
                         <div className="main-block__location">
                             Работаем по Казани и Татарстану

@@ -1,0 +1,119 @@
+.preference {
+    position: relative;
+    background: #e5efed;
+    padding-top: 90px;
+    margin-top: 25px;
+    margin-bottom: 120px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        z-index: 1;
+        width: 100%;
+        height: 120px;
+        top: -120px;
+        left: 0;
+        background: url(../../../../public/pref1.png) no-repeat center top;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        z-index: 1;
+        width: 100%;
+        height: 120px;
+        bottom: -120px;
+        left: 0;
+        background: url(../../../../public/pref2.png) no-repeat center bottom;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .preference__row {
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .preference__col {               
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .preference__title {
+                    text-align: center;
+                    margin-bottom: 50px;
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                    color: #156292;
+                }
+
+                @media (min-width: 1200px) {
+                    .preference__title {
+                        font-size: 34px;                         
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .preference__title {
+                        margin-top: 0px;
+                        font-size: 24px;                        
+                    }
+                }
+
+                .preference__units {
+                    display: flex;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    width: auto;
+                    margin-bottom: 105px;
+
+                    .preference__el {
+                        padding-left: 22px;
+                        padding-right: 22px;
+                        flex-basis: 20%;
+                        max-width: 20%;
+                        min-width: 20%;
+                        text-align: center;
+
+                        .preference__text {
+                            font-size: 16px;
+                            font-family: 'SF Pro Display';
+                            color: #3f3d44;
+                            line-height: 1.3;
+                        }
+                    }
+                }
+            }
+
+            @media (min-width: 992px) {
+                .preference__col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;            
+        }        
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            width: 750px;
+        }
+    }
+}
