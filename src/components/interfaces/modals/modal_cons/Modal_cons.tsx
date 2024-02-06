@@ -2,10 +2,11 @@ import { useState } from 'react';
 import './Modal_cons.scss'
 
 interface ModalProps {
+    active: boolean;
     setActive: React.Dispatch<React.SetStateAction<boolean>>;    
 }
 
-const Modal_cons: React.FC<ModalProps> = ({ setActive }) => {
+const Modal_cons: React.FC<ModalProps> = ({ active, setActive }) => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [showNameError, setShowNameError] = useState(false);
@@ -14,7 +15,13 @@ const Modal_cons: React.FC<ModalProps> = ({ setActive }) => {
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const handleCloseModal = () => {
-        setActive(false)
+        setActive(false);
+
+        if (!active) {
+            document.body.classList.add('menu-active');
+        } else {
+            document.body.classList.remove('menu-active');
+        }
     };
 
     const handleSubmit = () => {

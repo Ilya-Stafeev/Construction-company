@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import './Modal.scss';
 
 interface ModalProps {
@@ -8,6 +8,18 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ active, setActive, children }) => {
+
+  useEffect(() => {
+    if (active) {
+      document.body.classList.add('menu-active');
+    } else {
+      document.body.classList.remove('menu-active');
+    }
+
+    return () => {
+      document.body.classList.remove('menu-active');
+    };
+  }, [active]);
 
   return (
     <div className= {active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>

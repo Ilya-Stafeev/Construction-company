@@ -7,7 +7,7 @@ interface DiskMenuProps {
 
 const Main_block: React.FC<DiskMenuProps> = ({ active, setActive }) => {
     const handleModalClick = () => {
-        setActive(true)
+        setActive(true);
     
         if (!active) {
             document.body.classList.add('menu-active');

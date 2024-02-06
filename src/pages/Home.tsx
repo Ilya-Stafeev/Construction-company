@@ -23,6 +23,7 @@ const Home = () => {
                 setActive={setModalConsActive}
             >
                 <Modal_cons
+                    active={modalConsActive}
                     setActive={setModalConsActive}
                 />
             </Modal>
