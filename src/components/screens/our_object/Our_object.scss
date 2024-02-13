@@ -1,0 +1,197 @@
+.our-object {
+    padding-bottom: 40px;
+    padding-top: 50px;
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .our-object__row {
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .our-object__col {
+                width: 100%;
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .our-object__title {
+                    margin-bottom: 26px;
+                    margin-top: 0px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1;
+                }
+
+                .our-object__blocks {
+                    display: flex;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    width: auto;
+                    flex-wrap: wrap;
+
+                    .our-object__card {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        width: 50%;
+                        min-width: 50%;
+                        max-width: 50%;
+                        position: relative;
+                        display: block;
+                        text-decoration: none;
+                        margin-bottom: 44px;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            z-index: 1;
+                            background: #e8e8e8;
+                            border-radius: 5px;
+                            height: 10px;
+                            bottom: -14px;
+                            left: 29px;
+                            right: 29px;
+                            width: auto;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            z-index: 1;
+                            background: #f2f2f2;
+                            border-radius: 5px;
+                            height: 10px;
+                            bottom: -7px;
+                            left: 22px;
+                            right: 22px;
+                            width: auto;
+                        }
+
+                        .our-object__el {
+                            height: 100%;
+                            background: #ffffff;
+                            box-shadow: 0 10px 30px 12px rgba(0,0,0,.2);
+                            position: relative;
+                            border-radius: 5px;
+                            padding: 15px;
+                            display: block;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                z-index: 5;
+                                background: #ffffff;
+                                border-radius: 5px;
+                                height: 10px;
+                                bottom: 0px;
+                                left: 0px;
+                                right: 0px;
+                                width: auto;
+                            }
+
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                z-index: 1;
+                                background: #f2f2f2;
+                                border-radius: 5px;
+                                height: 10px;
+                                bottom: -7px;
+                                left: 22px;
+                                right: 22px;
+                                width: auto;
+                            }
+
+                            .our-object__image {
+                                display: block;
+                                margin-bottom: 22px;
+                                text-align: center;
+                                border-radius: 7px;
+                                overflow: hidden;
+
+                                .our-object__img {
+                                    height: auto;
+                                    max-width: 100%;
+                                }
+                            }
+
+                            .our-object__title {
+                                font-size: 24px;
+                                color: #5aab56;
+                                font-family: 'Montserrat';
+                                font-weight: 700;
+                                display: block;
+                                margin-bottom: 10px;
+                                line-height: 1.2;
+                            }
+
+                            .our-object__serv {
+                                font-size: 18px;
+                                color: #1495ce;
+                                font-family: 'Montserrat';
+                                font-weight: 700;
+                                display: block;
+                                line-height: 1.2;
+                                margin-bottom: 10px;
+
+                                .our-object__indent {
+                                    font-style: normal;
+                                    display: inline-block;
+                                    margin-right: 4px;                                
+                                }
+                            }
+
+                            .our-object__client {
+                                font-size: 18px;
+                                color: #156292;
+                                font-family: 'Montserrat';
+                                font-weight: 700;
+                                display: block;                                
+                                line-height: 1.2;
+                                margin-bottom: 12px;
+
+                                .our-object__indent {
+                                    font-style: normal;
+                                    display: inline-block;
+                                    margin-right: 4px;                                
+                                }
+                            }
+
+                            .our-object__text {
+                                display: block;
+                                color: #3f3d44;
+                                font-size: 14px;
+                                font-family: 'SF Pro Display';
+                                font-weight: 500;
+                                line-height: 1.5;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;            
+        }        
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            width: 750px;
+        }
+    }
+}
