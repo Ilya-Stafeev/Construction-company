@@ -1,0 +1,100 @@
+.contacts-map {
+    height: 715px;
+    background: #d8e7e4;
+
+    .contacts-map__map {
+        width: 50%;
+        position: absolute;
+        z-index: 2;
+        height: 715px;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .contacts-map__row {
+            margin-right: -15px;
+            margin-left: -15px;
+            
+            .contacts-map__col {
+                margin-left: 50%;
+
+                .contacts-map__inform {
+                    height: 715px;
+                    padding: 50px 35px 35px;
+
+                    .contacts-map__title {
+                        text-transform: uppercase;
+                        margin-bottom: 25px;
+                        font-size: 36px;
+                        font-family: 'Montserrat';
+                        color: #156292;
+                    }
+
+                    .contacts-map__inform-call{
+                        margin-bottom: 32px;
+
+                        .contacts-map__lab {
+                            font-family: 'SF Pro Display';
+                            font-size: 16px;
+                            color: #1495ce;
+                            margin-bottom: 8px;
+                            font-weight: 700;
+                        }
+
+                        .contacts-map__text {
+                            font-family: 'SF Pro Display';
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .contacts-map__form-wrap {
+                        width: 100%;
+                        max-width: 360px;
+
+                        .contacts-map__form-title {
+                            font-size: 16px;
+                            font-family: 'SF Pro Display';
+                            line-height: 1.5;
+                            margin-bottom: 25px;
+                        }
+
+                        .contacts-map__form {
+                            .contacts-map__input {
+                                height: 32px;
+                                border: none;
+                                border-bottom: 1px solid #0095bb;
+                                width: 100%;
+                                background: transparent;
+                                margin-bottom: 15px;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;            
+        }        
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            width: 750px;
+        }
+    }
+}
