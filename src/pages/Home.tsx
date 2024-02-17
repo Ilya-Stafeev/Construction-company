@@ -6,6 +6,8 @@ import Services from "../components/screens/services/Services"
 import Preference from "../components/screens/preference/Preference"
 import Our_object from "../components/screens/our_object/Our_object"
 import Contacts_map from "../components/screens/contacts_map/Contacts_map"
+import Footer from "../components/screens/footer/Footer"
+import Copyright from "../components/screens/copyright/Copyright"
 
 import Modal_cons from "../components/modals/modal_cons/Modal_cons"
 import Modal from "../components/modals/Modal"
@@ -19,7 +21,13 @@ const Home = () => {
             <Main_blok
                 active={modalConsActive}
                 setActive={setModalConsActive}
-            />
+            />            
+            <Services/>
+            <Preference/>
+            <Our_object/>
+            <Contacts_map/>
+            <Footer/>
+            <Copyright/>
             <Modal 
                 active={modalConsActive}
                 setActive={setModalConsActive}
@@ -29,10 +37,6 @@ const Home = () => {
                     setActive={setModalConsActive}
                 />
             </Modal>
-            <Services/>
-            <Preference/>
-            <Our_object/>
-            <Contacts_map/>
         </>
     )
 }

@@ -41,7 +41,7 @@ const Header: React.FC = () => {
     const navClass = isMenuActive ? 'header__nav active' : 'header__nav';
 
   return (
-    <header className='header'>
+    <section className='header'>
         <div className="container">
             <div className="header__block">
                 <div className="header__logo">
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
                 </div>
             </div>
         </div>
-    </header>
+    </section>
   );
 };
 

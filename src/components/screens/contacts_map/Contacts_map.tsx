@@ -1,16 +1,19 @@
 import './Contacts_map.scss';
 
-import { useState, useEffect } from "react";
-
-import { Link } from 'react-router-dom';
+import { useState } from "react";
 
 const Contacts_map: React.FC = () => {
+  const [isCheckActive, setIsCheckActive] = useState(false);
     
-    
+  const handleCheckClick = () => {
+    setIsCheckActive(!isCheckActive)
+}
 
   return (
     <section className="contacts-map">
-      <div className="contacts-map__map"></div>
+      <div className="contacts-map__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfa336f602417a2bbdee3a5bcf442b26623b758329aeb65d0de060283ace21d&amp;source=constructor" width="100%" height="100%"></iframe>
+      </div>
       <div className="container">
         <div className="contacts-map__row">
           <div className="contacts-map__col">
@@ -31,8 +34,20 @@ const Contacts_map: React.FC = () => {
                   Оставьте свои контакты и мы свяжемся с Вами в течение 4 часов (в рабочее время)
                 </p>
                 <form action="" className='contacts-map__form'>
-                  <input className='contacts-map__input' type="text" placeholder="Имя" name="your-name"/>
-                  <input className='contacts-map__input' type="text" />
+                  <div className='contacts-map__input-block'>
+                    <input className='contacts-map__input' type="text" placeholder="Имя" name="your-name"/>
+                    <span className='contacts-map__error'>Поле обязательно для заполнения.</span>
+                  </div>
+                  <div className='contacts-map__input-block'>
+                    <input className='contacts-map__input' type="text" placeholder="Телефон"/>
+                    <span className='contacts-map__error'>Поле обязательно для заполнения.</span>
+                  </div>
+                  <label className={`contacts-map__checker ${isCheckActive ? 'active' : ''}`} onClick={handleCheckClick}>
+                    Я даю согласие на обработку персональных данных и соглашаюсь с <a className='contacts-map__checker-link' href="/">политикой конфиденциальности</a>
+                  </label>
+                  <button className='contacts-map__btn'>
+                    <span className='contacts-map__btn-text'>свяжитесь со мной</span>
+                  </button>
                 </form>
               </div>
             </div>

@@ -7,6 +7,13 @@
         position: absolute;
         z-index: 2;
         height: 715px;
+
+        iframe {
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+        }
     }
 
     .container {
@@ -61,17 +68,106 @@
                             font-family: 'SF Pro Display';
                             line-height: 1.5;
                             margin-bottom: 25px;
+                            font-weight: 700;
                         }
 
                         .contacts-map__form {
-                            .contacts-map__input {
-                                height: 32px;
+                            .contacts-map__input-block {
+                                position: relative;
+
+                                .contacts-map__input {
+                                    height: 32px;
+                                    border: none;
+                                    border-bottom: 1px solid #0095bb;
+                                    width: 100%;
+                                    background: transparent;
+                                    margin-bottom: 15px;
+                                    border-radius: 3px;
+                                }
+
+                                .contacts-map__error {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 55%;
+                                    margin-top: 10px;
+                                    padding: 0;
+                                    border: none;
+                                    font-size: 12px;
+                                    color: #dc3232;
+                                    font-weight: normal;
+                                    display: block;
+                                }
+                            }
+
+                            .contacts-map__checker {
+                                position: relative;
+                                padding: 0 0 0 28px;
+                                cursor: pointer;
+                                color: #2d2f36;
+                                font-family: 'SF Pro Display';
+                                font-weight: 500;
+                                line-height: 1.6;
+                                font-size: 13px;
+                                margin-top: 10px;
+                                margin-bottom: 20px;
+                                display: block;
+
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0;
+                                    width: 17px;
+                                    height: 17px;
+                                    background: url(../../../../public/check.png) no-repeat left top;
+                                    transition: .2s;
+                                }
+
+                                &.active {
+                                    &::before {
+                                        background: url(../../../../public/checky.png) no-repeat left top;
+                                    }
+                                }
+
+                                .contacts-map__checker-link {
+                                    color: #79bb42;
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            .contacts-map__btn {
+                                width: 331px;
+                                height: 110px;
+                                padding: 0;
+                                line-height: inherit;
+                                background: url(../../../../public/btn.png) no-repeat;
+                                background-size: 100% auto;
+                                position: relative;
+                                left: -20px;
+                                margin-top: -17px;
                                 border: none;
-                                border-bottom: 1px solid #0095bb;
-                                width: 100%;
-                                background: transparent;
-                                margin-bottom: 15px;
-                                border-radius: 3px;
+                                box-shadow: none !important;
+                                padding-bottom: 32px;
+                                font-size: 13px;
+                                color: #ffffff;
+                                text-transform: uppercase;
+                                letter-spacing: 1.5px;
+                                transition: .2s;
+                                cursor: not-allowed;
+
+                                &:hover {
+                                    background: url(../../../../public/btn-h.png) no-repeat;
+                                }
+
+                                &:active {
+                                    background: url(../../../../public/btn-a.png) no-repeat;
+                                }
+
+                                .contacts-map__btn-text {
+                                    font-family: 'Montserrat';
+                                    font-weight: 700;
+                                }
                             }
                         }
                     }
