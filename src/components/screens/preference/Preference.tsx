@@ -14,7 +14,7 @@ const Preference: React.FC = () => {
                                     <img className='preference__img' src="./vigoda-1.png" alt="" />
                                 </div>
                                 <p className='preference__text'>Экономия</p>
-                                <p className='preference__text'>на исправлении брака и дефектов до 20%</p>
+                                <p className='preference__text'>на исправлении брака и дефектов до <strong className='preference__text-highlighting'>20%</strong></p>
                             </div>
                             <div className="preference__el">
                                 <div className="preference__imgwp">

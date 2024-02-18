@@ -115,6 +115,12 @@
                                 line-height: 1.2;
                             }
 
+                            @media (max-width: 768px) {
+                                .services__card-title {
+                                    font-size: 20px;                      
+                                }
+                            }
+
                             .services__card-image {
                                 margin: 0 auto;
                                 max-width: 90%;

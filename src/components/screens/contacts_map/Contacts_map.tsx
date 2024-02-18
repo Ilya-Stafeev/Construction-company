@@ -12,7 +12,7 @@ const Contacts_map: React.FC = () => {
   return (
     <section className="contacts-map">
       <div className="contacts-map__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfa336f602417a2bbdee3a5bcf442b26623b758329aeb65d0de060283ace21d&amp;source=constructor" width="100%" height="100%"></iframe>
+        <iframe className='contacts-map__iframe' src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bfa336f602417a2bbdee3a5bcf442b26623b758329aeb65d0de060283ace21d&amp;source=constructor" width="100%" height="100%"></iframe>
       </div>
       <div className="container">
         <div className="contacts-map__row">

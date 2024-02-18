@@ -108,6 +108,7 @@
                     margin-top: -6px;
                     transition: .2s;
                     border: none;
+                    font-size: 13px;
 
                     &:hover {
                         background: url(../../../../public/btn-h.png) no-repeat;
@@ -124,14 +125,32 @@
                         position: relative;
                         top: -16px;
                         color: #ffffff;
-                        font-size: 13px;
-                        font-family: 'mb';
                         text-transform: uppercase;
                         letter-spacing: 1px;
                         font-family: 'Montserrat';
                         font-weight: 700;
                     }
                 }               
+
+                @media (max-width: 336px) {
+                    .main-block__btn {
+                        width: 270px;
+                        font-size: 10px;
+                        padding-bottom: 12px;
+
+                        &:hover {
+                            background: url(../../../../public/btn-h.png) no-repeat;
+                            width: 270px;
+                            background-size: 100% auto;
+                        }
+
+                        &:active {
+                            background: url(../../../../public/btn-a.png) no-repeat;
+                            width: 270px;
+                            background-size: 100% auto;
+                        }
+                    }
+                }
 
                 .main-block__location {
                     padding-left: 45px;
