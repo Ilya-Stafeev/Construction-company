@@ -21,7 +21,11 @@ const Preference: React.FC = () => {
                                     <img className='preference__img' src="./vigoda-2.png" alt="" />
                                 </div>
                                 <p className='preference__text'>
-                                    Отсутствие нецелевого использования денежных средств
+                                    Отсутствие нецелевого
+                                    <br />
+                                    использования
+                                    <br />
+                                    денежных средств
                                 </p>
                             </div>
                             <div className="preference__el">
@@ -37,7 +41,11 @@ const Preference: React.FC = () => {
                                     <img className='preference__img' src="./vigoda-4.png" alt="" />
                                 </div>
                                 <p className='preference__text'>
-                                    Отсутствие проблем при сдаче объектов в эксплуатацию
+                                    Отсутствие проблем
+                                    <br />
+                                    при сдаче объектов
+                                    <br />
+                                    в эксплуатацию
                                 </p>
                             </div>
                             <div className="preference__el">
@@ -84,7 +92,11 @@ const Preference: React.FC = () => {
                                     <img className='preference__img' src="./priim-4.png" alt="" />
                                 </div>
                                 <p className='preference__text'>
-                                    Даём рекомендации по оптимизации проектных и технических решений
+                                    Даём рекомендации по
+                                    <br />
+                                    оптимизации проектных и
+                                    <br />
+                                    технических решений
                                 </p>
                             </div>
                             <div className="preference__el">

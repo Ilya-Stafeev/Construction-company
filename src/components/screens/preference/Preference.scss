@@ -91,9 +91,22 @@
                                     width: 106px;                       
                                 }
                             }
+
+                            @media (max-width: 768px) {
+                                .preference__img {
+                                    width: 160px;                       
+                                }
+                            }
+
+                            @media (max-width: 372px) {
+                                .preference__img {
+                                    width: 106px;                       
+                                }
+                            }
                         }
 
                         .preference__text {
+                            text-align: center;
                             font-size: 16px;
                             font-family: 'SF Pro Display';
                             color: #3f3d44;
