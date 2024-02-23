@@ -193,7 +193,11 @@
                                 text-transform: uppercase;
                                 letter-spacing: 1.5px;
                                 transition: .2s;
-                                cursor: not-allowed;
+                                cursor: pointer;
+
+                                &.not-allowed {
+                                    cursor: not-allowed;
+                                }
 
                                 &:hover {
                                     background: url(../../../../public/btn-h.png) no-repeat;

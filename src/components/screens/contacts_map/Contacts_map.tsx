@@ -3,11 +3,31 @@ import './Contacts_map.scss';
 import { useState } from "react";
 
 const Contacts_map: React.FC = () => {
-  const [isCheckActive, setIsCheckActive] = useState(false);
-    
-  const handleCheckClick = () => {
-    setIsCheckActive(!isCheckActive)
-}
+  const [isCheckActive, setIsCheckActive] = useState<boolean>(false);    
+  const [name, setName] = useState<string>('');
+  const [phone, setPhone] = useState<string>('');
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
+
+
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  }
+
+  const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPhone(event.target.value);
+  }
+
+  const handleCheckClick = () => {    
+    setIsCheckActive(!isCheckActive);
+    setFormSubmitted(true);
+    if (!name.trim() || !phone.trim()) {
+      return;
+    }
+  }
+
+  const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+  }
 
   return (
     <section className="contacts-map">
@@ -35,17 +55,18 @@ const Contacts_map: React.FC = () => {
                 </p>
                 <form action="" className='contacts-map__form'>
                   <div className='contacts-map__input-block'>
-                    <input className='contacts-map__input' type="text" placeholder="Имя" name="your-name"/>
-                    <span className='contacts-map__error'>Поле обязательно для заполнения.</span>
+                    <input className='contacts-map__input' type="text" placeholder="Имя" name="your-name" value={name} onChange={handleNameChange}/>
+                    {formSubmitted && !name.trim() && <span className='contacts-map__error'>Поле обязательно для заполнения.</span>}
                   </div>
                   <div className='contacts-map__input-block'>
-                    <input className='contacts-map__input' type="text" placeholder="Телефон"/>
-                    <span className='contacts-map__error'>Поле обязательно для заполнения.</span>
+                    <input className='contacts-map__input' type="tel" placeholder="Телефон" name="phone" value={phone} onChange={handlePhoneChange}/>
+                    {formSubmitted && !phone.trim() && <span className='contacts-map__error'>Поле обязательно для заполнения.</span>}
+                    {formSubmitted && phone.trim() && !/^\d+$/.test(phone) && <span className='contacts-map__error'>Введён некорректный телефонный номер.</span>}
                   </div>
                   <label className={`contacts-map__checker ${isCheckActive ? 'active' : ''}`} onClick={handleCheckClick}>
                     Я даю согласие на обработку персональных данных и соглашаюсь с <a className='contacts-map__checker-link' href="/">политикой конфиденциальности</a>
                   </label>
-                  <button className='contacts-map__btn'>
+                  <button className={`contacts-map__btn ${isCheckActive ? '' : 'not-allowed'}`} onClick={handleButtonClick}>
                     <span className='contacts-map__btn-text'>свяжитесь со мной</span>
                   </button>
                 </form>

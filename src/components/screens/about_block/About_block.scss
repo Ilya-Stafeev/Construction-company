@@ -1,0 +1,131 @@
+.about-block {
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .about-block__row {
+            margin-right: -15px;
+            margin-left: -15px;
+
+            .about-block__col {
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .about-block__slog {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #79bb42;
+                    margin-bottom: 20px;
+
+                    .about-block__nav {
+                        color: #79bb42;
+
+                        .about-block__home {
+                            .about-block__link {
+                                font-family: 'Montserrat';
+                                font-weight: 600;
+                                font-size: 16px;
+                                color: #79bb42;
+                            }
+                        }
+
+                        .about-block__sep {
+                            font-family: 'Montserrat';
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: #79bb42;
+                        }
+
+                        .about-block__nav-text {
+                            font-family: 'Montserrat';
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: #79bb42;
+                        }
+                    }
+                }
+
+                .about-block__title {
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-top: 0px;
+                    margin-bottom: 30px;
+                    padding-bottom: 10px;
+                    font-size: 36px;
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                    color: #156292;
+                    border-bottom: 2px solid #156292;
+                }
+
+                .about-block__content {
+                    display: block;
+                    color: #3f3d44;
+                    font-size: 14px;
+                    font-family: 'SF Pro Display';
+                    line-height: 1.5;
+                    margin-bottom: 10px;
+
+                    .about-block__figure {
+                        float: right;
+                        margin: 0.5em 0 0.5em 1em;
+
+                        .about-block__img {
+                            height: auto;
+                            max-width: 100%;
+                            vertical-align: bottom;
+                            width: 400px;
+                            height: 267px;
+                        }
+                    }
+
+                    .about-block__content-text {
+                        font-size: 16px;
+                        line-height: 2;
+                        color: #3f3d44;
+                        font-family: 'SF Pro Display';
+                        font-weight: 400;
+                        margin-bottom: 15px;
+                        text-align: left;
+
+                        .about-block__content-strong {
+                            
+                        }
+
+                        .about-block__link {
+                            .about-block__link-strong {
+                                padding: 0.2em;
+                                background-color: rgba(0, 0, 0, 0);
+                                color: #156292;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;            
+        }        
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container {
+            width: 750px;
+        }
+    }
+}

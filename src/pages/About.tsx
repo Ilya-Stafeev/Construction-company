@@ -1,11 +1,15 @@
-import Header from "../components/screens/header/Header"
+import { Header, About_block, Preference_about, Contacts_map, Footer, Copyright } from '../components/screens'
 
 const About = () =>{
     return(
-        <>
+        <div className='page'>
             <Header/>
-            <div>О нас</div>
-        </>
+            <About_block/>
+            <Preference_about/>
+            <Contacts_map/>
+            <Footer/>
+            <Copyright/>
+        </div>
     )
 }
 export default About

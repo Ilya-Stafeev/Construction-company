@@ -1,13 +1,6 @@
 import { useState } from "react";
 
-import Header from "../components/screens/header/Header"
-import Main_blok from "../components/screens/main_block/Main-block"
-import Services from "../components/screens/services/Services"
-import Preference from "../components/screens/preference/Preference"
-import Our_object from "../components/screens/our_object/Our_object"
-import Contacts_map from "../components/screens/contacts_map/Contacts_map"
-import Footer from "../components/screens/footer/Footer"
-import Copyright from "../components/screens/copyright/Copyright"
+import { Header, Main_blok, Services, Preference, Our_object, Contacts_map, Footer, Copyright } from '../components/screens'
 
 import Modal_cons from "../components/modals/modal_cons/Modal_cons"
 import Modal from "../components/modals/Modal"
@@ -16,7 +9,7 @@ const Home = () => {
     const [modalConsActive, setModalConsActive] = useState<boolean>(false)
 
     return(     
-        <>
+        <div className="home">
             <Header/>
             <Main_blok
                 active={modalConsActive}
@@ -37,7 +30,7 @@ const Home = () => {
                     setActive={setModalConsActive}
                 />
             </Modal>
-        </>
+        </div>
     )
 }
 export default Home
