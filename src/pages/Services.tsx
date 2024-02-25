@@ -1,11 +1,14 @@
-import Header from "../components/screens/header/Header"
+import { Header, Services_block, Contacts_map, Footer, Copyright } from '../components/screens'
 
 const Services = () =>{
     return(     
-        <>
+        <div className='page'>
             <Header/>
-            <div>Услуги</div>
-        </>
+            <Services_block/>
+            <Contacts_map/>
+            <Footer/>
+            <Copyright/>   
+        </div>
     )
 }
 export default Services

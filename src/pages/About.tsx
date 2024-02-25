@@ -1,4 +1,4 @@
-import { Header, About_block, Preference_about, Contacts_map, Footer, Copyright } from '../components/screens'
+import { Header, About_block, Preference_about, Slider_block, Contacts_map, Footer, Copyright } from '../components/screens'
 
 const About = () =>{
     return(
@@ -6,6 +6,7 @@ const About = () =>{
             <Header/>
             <About_block/>
             <Preference_about/>
+            <Slider_block/>
             <Contacts_map/>
             <Footer/>
             <Copyright/>

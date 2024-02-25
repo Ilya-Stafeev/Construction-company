@@ -1,4 +1,4 @@
-import './Services.scss'
+import './Services_home.scss'
 
 const Services: React.FC = () => {
  

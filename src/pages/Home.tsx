@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Header, Main_blok, Services, Preference, Our_object, Contacts_map, Footer, Copyright } from '../components/screens'
+import { Header, Main_blok, Services_home, Preference, Our_object, Contacts_map, Footer, Copyright } from '../components/screens'
 
 import Modal_cons from "../components/modals/modal_cons/Modal_cons"
 import Modal from "../components/modals/Modal"
@@ -14,8 +14,8 @@ const Home = () => {
             <Main_blok
                 active={modalConsActive}
                 setActive={setModalConsActive}
-            />            
-            <Services/>
+            />
+            <Services_home/>
             <Preference/>
             <Our_object/>
             <Contacts_map/>

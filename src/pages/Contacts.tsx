@@ -1,11 +1,14 @@
-import Header from "../components/screens/header/Header"
+import { Header, Contacts_block, Contacts_map, Footer, Copyright } from '../components/screens'
 
 const Contacts = () =>{
     return(
-        <>
+        <div className='page'>
             <Header/>
-            <div>Контакты</div>
-        </>
+            <Contacts_block/>
+            <Contacts_map/>
+            <Footer/>
+            <Copyright/>
+        </div>
     )
 }
 export default Contacts

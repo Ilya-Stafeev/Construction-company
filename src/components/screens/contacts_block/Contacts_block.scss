@@ -1,4 +1,4 @@
-.about-block {
+.contacts-block {
     padding-top: 50px;
     padding-bottom: 70px;
 
@@ -8,26 +8,26 @@
         margin-right: auto;
         margin-left: auto;
 
-        .about-block__row {
+        .contacts-block__row {
             margin-right: -15px;
             margin-left: -15px;
 
-            .about-block__col {
+            .contacts-block__col {
                 padding-right: 15px;
                 padding-left: 15px;
 
-                .about-block__slog {
+                .contacts-block__slog {
                     font-family: 'Montserrat';
                     font-weight: 400;
                     font-size: 16px;
                     color: #79bb42;
                     margin-bottom: 20px;
 
-                    .about-block__nav {
+                    .contacts-block__nav {
                         color: #79bb42;
 
-                        .about-block__home {
-                            .about-block__link {
+                        .contacts-block__home {
+                            .contacts-block__link {
                                 font-family: 'Montserrat';
                                 font-weight: 600;
                                 font-size: 16px;
@@ -35,14 +35,14 @@
                             }
                         }
 
-                        .about-block__sep {
+                        .contacts-block__sep {
                             font-family: 'Montserrat';
                             font-weight: 600;
                             font-size: 16px;
                             color: #79bb42;
                         }
 
-                        .about-block__nav-text {
+                        .contacts-block__nav-text {
                             font-family: 'Montserrat';
                             font-weight: 600;
                             font-size: 16px;
@@ -51,7 +51,7 @@
                     }
                 }
 
-                .about-block__title {
+                .contacts-block__title {
                     text-transform: uppercase;
                     text-align: center;
                     margin-top: 0px;
@@ -65,18 +65,18 @@
                 }
 
                 @media (max-width: 1200px) {
-                    .about-block__title {
+                    .contacts-block__title {
                         font-size: 34px;                         
                     }
                 }
 
                 @media (max-width: 768px) {
-                    .about-block__title {                        
+                    .contacts-block__title {                        
                         font-size: 24px;                        
                     }
                 }
 
-                .about-block__content {
+                .contacts-block__content {
                     display: block;
                     color: #3f3d44;
                     font-size: 14px;
@@ -84,39 +84,32 @@
                     line-height: 1.5;
                     margin-bottom: 10px;
 
-                    .about-block__figure {
-                        float: right;
-                        margin: 0.5em 0 0.5em 1em;
-
-                        .about-block__img {
-                            height: auto;
-                            max-width: 100%;
-                            vertical-align: bottom;
-                            width: 400px;
-                            height: 267px;
-                        }
-                    }
-
-                    .about-block__content-text {
+                    .contacts-block__text {
                         font-size: 16px;
                         line-height: 2;
                         color: #3f3d44;
                         font-family: 'SF Pro Display';
-                        font-weight: 400;
                         margin-bottom: 15px;
-                        text-align: left;
 
-                        .about-block__content-strong {
-                            
+                        .contacts-block__strong {
+
                         }
 
-                        .about-block__link {
-                            .about-block__link-strong {
-                                padding: 0.2em;
-                                background-color: rgba(0, 0, 0, 0);
-                                color: #156292;
-                            }
+                        .ontacts-block__link {
+                            color: #156292;
                         }
+                    }
+
+                    .contacts-block__text2 {
+                        font-size: 16px;
+                        line-height: 2;
+                        color: #3f3d44;
+                        font-family: 'SF Pro Display';
+                        margin-bottom: 4px;
+
+                        .contacts-block__strong {
+
+                        } 
                     }
                 }
             }

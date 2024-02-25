@@ -1,11 +1,13 @@
-import Header from "../components/screens/header/Header"
+import { Header, Contacts_map, Footer, Copyright } from '../components/screens'
 
 const Portfolio = () =>{
     return(     
-        <>
-            <Header/>
-            <div>Портфолио</div>
-        </>
+        <div className='page'>
+            <Header/>           
+            <Contacts_map/>
+            <Footer/>
+            <Copyright/>
+        </div>
     )
 }
 export default Portfolio
